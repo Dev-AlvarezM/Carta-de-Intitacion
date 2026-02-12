@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>INVITACION </title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        
+        <center>
+            
+            <table class="tabla-principal" width="600">
+
+            <tr>
+                
+                <td id="seccion-invitacion">
+                    
+                    <h1 id="titulo">
+                        <font face="roman">
+                            <b>CARTA DE INVITACION</b>
+                        </font>
+                    </h1>
+                            <hr>
+                    <h2>
+                        <font color="white">
+                            A la fiesta de Bad Bunny
+                        </font>
+                    </h2>
+                    
+                    <img id="imagen-badbunny" src="https://tse3.mm.bing.net/th/id/OIP.qSBLhoJCeTehA9h3TByqgwHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bad bunny" width="350"> <br>
+                    
+                    <br>
+                    
+                    <p class="texto">
+                        <b>Estimado invitado</b>
+                    </p>
+                    
+                    <p class="texto">
+                        <font class="texto">Te invitamos a nuestro evento especial.</font>
+                    </p>
+                    
+                    <p class="texto">
+                        
+                        <b>Detalles del evento:</b><br>
+                        📅 Fecha: 20 de Marzo de 2026<br>
+                        ⏰ Hora: 6:00 PM<br>
+                        📍 Lugar: Puerto Rico
+                                <br><br>
+                    </p>
+                    
+                    <div class="contador">
+                         <div class="tiempo">
+                            <span id="dias">00</span>
+                            <p>Dias</p>
+                        </div>
+                        <div class="tiempo">
+                            <span id="horas">00</span>
+                            <p>Horas</p>
+                        </div>
+                        <div class="tiempo">
+                            <span id="minutos">00</span>
+                            <p>Minutos</p>
+                        </div>
+                        <div class="tiempo">
+                            <span id="segundos">00</span>
+                            <p>Segundos</p>
+                        </div>    
+                    </div>
+                    <p class="texto">
+                        <font class="texto">Esperamos que disfrutes del evento.</font>
+                    </p>
+                    
+                    <script>
+                    // Configura la fecha objetivo aquí
+                    const fechaObjetivo = new Date("Mar 20, 2026 00:00:00").getTime();
+
+                    const actualizarContador = setInterval(function() {
+                        const ahora = new Date().getTime();
+                        const distancia = fechaObjetivo - ahora;
+
+                        // Cálculos de tiempo
+                        const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+                        const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+                        const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+
+                        // Inyectar los números en el HTML
+                        document.getElementById("dias").innerText = dias;
+                        document.getElementById("horas").innerText = horas;
+                        document.getElementById("minutos").innerText = minutos;
+                        document.getElementById("segundos").innerText = segundos;
+
+                        // Si la cuenta termina
+                        if (distancia < 0) {
+                            clearInterval(actualizarContador);
+                            document.querySelector(".contador").innerHTML = "¡LLEGÓ EL MOMENTO!";
+                        }
+                    }, 1000);
+                    </script>
+                                        
+                                    </td>
+                                    
+                                </tr>
+                                
+                            </table>
+                            
+                            
+                            <br><br><br><br>
+                            <table class="tabla-video" width="600">
+                                <tr id="seccion-video">
+                                    <td>
+                                        <h2>
+                                            <font color="white">
+                                                Felicidades Bad Bunny
+                                            </font>
+                                        </h2>
+                                  
+                                            <iframe id="video" width="460" height="315" src="https://www.youtube-nocookie.com/embed/UwSCDzYQb5A?si=X4OIX0RbWyFdCrRO&amp;controls=0" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                                            <br> <br>
+                                        
+                                            <h2>
+                                                <font color="white">
+                                                    Puedes encontrar el evento en el mapa
+                                                </font>
+                                            </h2>
+                                            <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1940396.4510815057!2d-67.9847071782084!3d18.217421078416304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c0296261b92a7f9%3A0xf336ec2818049b1a!2sPuerto%20Rico!5e0!3m2!1ses!2sgt!4v1770870810194!5m2!1ses!2sgt" width="455" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <br><br><br><br>
+                            <table class="tabla-carrusel">
+                                <tr>
+                                    <td>
+                                        <h2>
+                                            <font color="white">
+                                                Existos de Bad Bunny
+                                            </font>
+                                        </h2>
+                        <hr>
+
+                        <div class="carrusel">
+                                <div class="group">
+                                    <img src="https://www.billboard.com/wp-content/uploads/2020/10/Bad-Bunny-YHLQMDLG-billboard-embed-1601560699.jpg?w=1024" alt="YHLQMDLG" width="350" class="carrusel-imagen">
+                                    <img src="https://www.billboard.com/wp-content/uploads/2023/07/Bad-Bunny-Un-Verano-Sin-Ti-album-art-billboard-1240.jpg?w=1024" alt="Un Verano Sin Ti" width="350" class="carrusel-imagen">
+                                    <img src="https://www.billboard.com/wp-content/uploads/2022/10/Bad-Bunny-El-Ultimo-Tour-Del-Mundo-billboard-1240.jpg?w=1024" alt="El Último Tour Del Mundo" width="350" class="carrusel-imagen">
+                                    <img src="https://www.billboard.com/wp-content/uploads/2025/01/Bad-Bunny-Debi-Tirar-Mas-Fotos-album-art-billbaord-1240.jpg?w=1024" alt="Debi Tirar Mas Fotos" width="350" class="carrusel-imagen">
+                                    <img src="https://www.billboard.com/wp-content/uploads/2022/10/Bad-Bunny-X-100PRE-billboard-1240.jpg?w=1024" alt="X 100PRE" width="350" class="carrusel-imagen">
+                                    <img src="https://www.billboard.com/wp-content/uploads/2025/01/Nadie-Sabe-Lo-Que-Va-Pasar-Manana-album-art-billboard-1240.jpg?w=1024" alt="Nadie Sabe Lo Que Va Pasar Mañana" width="350" class="carrusel-imagen">
+                                    <img src="https://www.billboard.com/wp-content/uploads/2021/08/Bad-Bunny-LAS-QUE-NO-IBAN-A-SALIR-album-art-billboard-1240-1628700235.jpg?w=1024" alt="Las Que Iban a Salir" width="350" class="carrusel-imagen">
+                                </div>
+                                
+                                <div aria-hidden class="group">
+                                    <img src="https://www.billboard.com/wp-content/uploads/2020/10/Bad-Bunny-YHLQMDLG-billboard-embed-1601560699.jpg?w=1024" alt="YHLQMDLG" width="350" class="carrusel-imagen">
+                                    <img src="https://www.billboard.com/wp-content/uploads/2023/07/Bad-Bunny-Un-Verano-Sin-Ti-album-art-billboard-1240.jpg?w=1024" alt="Un Verano Sin Ti" width="350" class="carrusel-imagen">
+                                    <img src="https://www.billboard.com/wp-content/uploads/2022/10/Bad-Bunny-El-Ultimo-Tour-Del-Mundo-billboard-1240.jpg?w=1024" alt="El Último Tour Del Mundo" width="350" class="carrusel-imagen">
+                                    <img src="https://www.billboard.com/wp-content/uploads/2025/01/Bad-Bunny-Debi-Tirar-Mas-Fotos-album-art-billbaord-1240.jpg?w=1024" alt="Debi Tirar Mas Fotos" width="350" class="carrusel-imagen">
+                                    <img src="https://www.billboard.com/wp-content/uploads/2022/10/Bad-Bunny-X-100PRE-billboard-1240.jpg?w=1024" alt="X 100PRE" width="350" class="carrusel-imagen">
+                                    <img src="https://www.billboard.com/wp-content/uploads/2025/01/Nadie-Sabe-Lo-Que-Va-Pasar-Manana-album-art-billboard-1240.jpg?w=1024" alt="Nadie Sabe Lo Que Va Pasar Mañana" width="350" class="carrusel-imagen">
+                                    <img src="https://www.billboard.com/wp-content/uploads/2021/08/Bad-Bunny-LAS-QUE-NO-IBAN-A-SALIR-album-art-billboard-1240-1628700235.jpg?w=1024" alt="Las Que Iban a Salir" width="350" class="carrusel-imagen">
+                                </div>
+                            </div>
+                            
+                            <audio id="miAudio" src="/css/DtMF.m4a" autoplay></audio>
+                            <script>
+                                const audio = document.getElementById("miAudio");
+                                
+                                // Ajustar al 50% de volumen
+                                audio.volume = 0.25; 
+                            </script>
+                            
+                        </td>
+                    </tr>
+                </table> 
+                <br><br><br><br>
+                
+                <center>
+            
+            <table class="tabla-confirmacion" width="600">
+                
+            <tr>
+                
+                <td id="seccion-confirmacion">
+
+                    <h2>
+                        <font color="white">
+                            CONFIRMA TU ASISTENCIA
+                        </font>
+                    </h2>
+                    
+                    <hr>
+                    <br>
+                    
+                    <img id="gif-badbunny" src="https://media1.tenor.com/m/BN_U8ooGqMMAAAAd/bad-bunny-benito.gif" alt="Gif bad bunny" width="200">
+                    
+                    <br><br>
+                    
+                    <form id="form">
+                        
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                        
+                            <br><br>
+                            <label class="respuesta">
+                                <input class="respuesta" type="radio" name="asistencia" value="Si asistire" required> 
+                                <font>Si asistire</font>
+                            </label>
+                            
+                            <label class="respuesta">
+                                <input class="respuesta" type="radio" name="asistencia" value="No asistire" required>
+                                <font>No asistire</font>
+                            </label>
+
+                            <p class="texto"> 
+                                Cuantas personas asistirán contigo? (Incluyendote a ti)
+                            </p>
+                            <label class="cantidad">
+                                <input class="cantidad" type="number" id="cantidad" name="cantidad" min="1" max="10">
+                            </label>
+                            <br>
+                            <p class="texto"> 
+                                Tienes alguna alergia alimentaria o restricción dietética que debamos tener en cuenta? (Opcional)
+                            </p>
+                            <br>
+                            <textarea cols="30" name="comentario" id="comentario" placeholder="Escribe aquí tus alergias"></textarea>
+                            
+                            <br><br>
+                            
+                            <br><br>
+                            
+                            <button class="btn-confirmar">
+                                Confirmar
+                            </button>
+
+                            <br><br>
+                            
+                        </form>
+                        <font>
+                            <font color="white">Si tienes alguna pregunta, no dudes en contactarnos.</font><br>
+                        </font>
+                        
+                        <br>
+                        <a href="mailto:anibaladrian999@gmail.com">
+                            <font color="white">
+                                Enviar correo
+                            </font>
+                        </a>        
+                        
+                        </td>
+                    </tr>
+                </table>
+            </center>
+    
+
+            <script>
+document.getElementById("form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const nombre = document.getElementById("nombre").value;
+    const cantidad = document.getElementById("cantidad").value;
+    const comentario = document.getElementById("comentario").value;
+
+    const asistenciaInput = document.querySelector('input[name="asistencia"]:checked');
+    if (!asistenciaInput) {
+        alert("Selecciona una opción de asistencia");
+        return;
+    }
+
+    const asistencia = asistenciaInput.value;
+
+    const params = new URLSearchParams();
+    params.append("nombre", nombre);
+    params.append("asistencia", asistencia);
+    params.append("cantidad", cantidad);
+    params.append("comentario", comentario);
+
+    fetch("https://script.google.com/macros/s/AKfycbxrb9zhPnnLYHMJTEeS90ArbNqDRnd4AgRdGLGfsrcGUSoJr8EL76hBjOLugFHYObw/exec", {
+        method: "POST",
+        body: params
+    })
+    .then(res => res.text())
+    .then(data => {
+        console.log(data);
+        alert("¡Asistencia confirmada!");
+    })
+    .catch(err => {
+        console.error(err);
+        alert("Error al enviar");
+    });
+});
+</script>
+
+    
+        </center>
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+body {
+    background: #9E0D14;
+    background: radial-gradient(circle, rgba(158, 13, 20, 1) 0%, rgba(82, 5, 7, 1) 100%);
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#imagen-badbunny {
+    border-radius: 20px;
+}
+
+#imagen-badbunny:hover {
+    border: 1px solid white;
+}
+.tabla-principal {
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #9E0D14;
+    box-shadow: 0 0 30px 5px #C5172E;
+}
+
+.tabla-video {
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #9E0D14;
+    box-shadow: 0 0 30px 5px #C5172E;
+}
+
+
+
+/*carrusel*/
+.tabla-carrusel {
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #9E0D14;
+    box-shadow: 0 0 30px 5px #C5172E;
+    overflow: auto;
+}
+
+
+.carrusel{
+    margin: 40px auto;
+    width: 80%;
+    max-width: 550px;
+    display: flex;
+    overflow: auto;
+}
+
+.carrusel::-webkit-scrollbar {
+    display: none;
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 10s linear infinite;
+    padding-right: 1em;
+}
+
+.carrusel-imagen{
+    flex: 0 0 5em;
+    padding: 1em;
+    font-size: 10px;
+    border-radius: 2em;
+    text-align: center;
+    align-content: center;
+}
+
+/*Animacion carrusel*/
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+
+#titulo {
+    color: white;
+    font-size: 36px;
+}
+
+.texto {
+    color: white;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+/*Estilos del contador*/
+
+.contador {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px;
+}
+
+.tiempo {
+    background-color: #9E0D14;
+    padding: 10px;
+    border-radius: 20px;
+    min-width: 60px;
+    box-shadow: 0 0 30px 5px #C5172E;
+}
+
+.tiempo span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.tiempo p {
+    margin: 0;
+    margin: 0;
+    font-size: 14px;
+    color: white;
+}
+
+.tiempo:hover {
+    border: 1px solid white;
+}
+
+.tabla-confirmacion{
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #9E0D14;
+    box-shadow: 0 0 30px 5px #C5172E;
+}
+
+.respuesta {
+    margin-right: 10px;
+    transform: scale(1.5);
+    color: white;
+}
+
+.respuesta:hover {
+    border: 1px solid white;
+}
+
+#nombre {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    width: 200px;
+}
+
+
+/* From Uiverse.io by adamgiebl */ 
+button {
+  color: white;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #9E0D14;
+  cursor: pointer;
+  border: 1px solid #9E0D14;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #ad0d15, -6px -6px 12px #d82831;
+}
+
+button:hover {
+  border: 1px solid white;
+}
+
+button:active {
+  box-shadow: 4px 4px 12px #ad0d15, -4px -4px 12px #d82831;
+}
+
+
+/*
+color: white;
+width: 300px;
+height: 100vh;    
+filter: blur(2px);
+    transition: filter 0.3s ease;
+    border-style: solid;
+    border-width: 3px;
+
+.tabla-principal:hover {
+    filter: blur(0px);
+}
+*/
